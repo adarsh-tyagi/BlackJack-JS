@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: radial-gradient(circle, white, black);
+}
+
+.blackjack {
+  height: 92%;
+  width: 70%;
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  box-shadow: 0px 0px 20px #202020;
+  border-radius: 10px;
+  color: white;
+}
+
+#title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.board {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  font-family: monospace;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-area {
+  display: flex;
+  flex-direction: row;
+  height: 90%;
+  width: 100%;
+}
+
+.game-area-div {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(3, 153, 115);
+  text-align: center;
+  font-size: 1.5rem;
+  border: 5px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons {
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.buttons > button {
+  color: white;
+  border-radius: 5px;
+  outline: none;
+  padding: 0.3rem 0.7rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#hit-btn {
+  background-color: #0000ff;
+}
+#stand-btn {
+  background-color: rgb(156, 156, 0);
+}
+#deal-btn {
+  background-color: #cc0000;
+}
+
+.score-card {
+  margin-top: 1rem;
+  background-color: white;
+  color: black;
+}
+
+table,
+th,
+td {
+  padding: 5px;
+  border: 2px solid black;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.div-img {
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 80px;
+  height: 110px;
+  margin: 5px 3px;
+}
+
+@media (max-width: 600px) {
+  .blackjack {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  img {
+    width: 50px;
+    height: 80px;
+    margin: 5px 3px;
+  }
+}

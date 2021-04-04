@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./images/logo.png" />
+    <title>BlackJack</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="blackjack">
+        <h2 id="title">BlackJack</h2>
+        <div class="board">
+          <h2 id="result">Let's Play</h2>
+          <div class="game-area">
+            <div id="player" class="game-area-div">
+              <h5 style="color: black">Player</h5>
+              <h2 id="player-score">0</h2>
+              <div id="player-img" class="div-img"></div>
+            </div>
+            <div id="dealer" class="game-area-div">
+              <h5 style="color: black">Dealer</h5>
+              <h2 id="dealer-score">0</h2>
+              <div id="dealer-img" class="div-img"></div>
+            </div>
+          </div>
+        </div>
+        <div class="buttons">
+          <button id="hit-btn">Hit</button>
+          <button id="stand-btn">Stand</button>
+          <button id="deal-btn">Deal</button>
+        </div>
+        <div class="score-card">
+          <table>
+            <tr>
+              <th>Win</th>
+              <th>Loss</th>
+              <th>Draw</th>
+            </tr>
+            <tr>
+              <td id="win">0</td>
+              <td id="loss">0</td>
+              <td id="draw">0</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
