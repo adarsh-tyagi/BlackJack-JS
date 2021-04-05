@@ -130,7 +130,7 @@ function playerFn() {
 }
 
 function sleep() {
-  return new Promise((resolve) => setTimeout(resolve, 750));
+  return new Promise((resolve) => setTimeout(resolve, 1000));
 }
 
 async function dealerFn() {
